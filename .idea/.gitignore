@@ -1,0 +1,8 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Datasource local storage ignored files
+/../../../../../../../../:\Users\Rafael Peinado\Documents\Udemy\Angular 9 e Spring Boot 2.2 Fullstack Completo e Atualizado\clientes\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
