@@ -14,7 +14,7 @@ import javax.validation.Valid;
 @RestController
 @RequestMapping("/api/usuarios")
 @RequiredArgsConstructor
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin("*")
 public class UsuarioController {
 
     private final UsuarioService usuarioService;
