@@ -30,7 +30,7 @@ public class ApplicationControllerAdvice {
     @ExceptionHandler(ResponseStatusException.class)
     // nesse não coloca response status, pois a inserção de not found é dinâmica
     public ResponseEntity handleResponseStatusException(ResponseStatusException exception) {
-        return new ResponseEntity(new ApiErros(exception.getMessage()), exception.getStatus());
+        return new ResponseEntity(new ApiErros(exception.getReason()), exception.getStatus());
         /*String messageError = exception.getMessage();
         HttpStatus statusCode = exception.getStatus();
         ApiErros apiErros = new ApiErros(messageError);
