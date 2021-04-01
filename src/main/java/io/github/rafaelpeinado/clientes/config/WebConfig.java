@@ -17,11 +17,11 @@ public class WebConfig {
     @Bean
     public FilterRegistrationBean<CorsFilter> corsFilterFilterRegistrationBean() {
         List<String> all = Arrays.asList("*");
-        List<String> patterns = Arrays.asList("http://localhost:4200");
+        List<String> links = Arrays.asList("**");
 
         CorsConfiguration corsConfiguration = new CorsConfiguration();
         corsConfiguration.setAllowedOriginPatterns(all);
-        //corsConfiguration.setAllowedOrigins(all);
+        corsConfiguration.setAllowedOrigins(links);
         corsConfiguration.setAllowedHeaders(all);
         corsConfiguration.setAllowedMethods(all);
         corsConfiguration.setAllowCredentials(true);
